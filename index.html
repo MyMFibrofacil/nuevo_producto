@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Torre de Aprendizaje Plegable | MyM Fibrofacil</title>
+  <meta name="description" content="Nueva Torre de Aprendizaje Plegable. Práctica, segura y fácil de guardar. Producto mayorista de MyM Fibrofacil." />
+
+  <!-- Open Graph para compartir por WhatsApp -->
+  <meta property="og:title" content="Nueva Torre de Aprendizaje Plegable" />
+  <meta property="og:description" content="Práctica, segura y fácil de guardar. Mirá fotos, medidas, precio y video de armado." />
+  <meta property="og:image" content="img/torre-plegable-principal.jpg" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #f7f3ee;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666666;
+      --brand: #7a4b2b;
+      --brand-dark: #55321d;
+      --accent: #d9b28c;
+      --border: #e6ddd3;
+      --success: #1f8f4d;
+      --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      padding-bottom: 92px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      display: block;
+      border-radius: 10px;
+      background: white;
+      padding: 3px;
+    }
+
+    .tag {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      background: #ead8c4;
+      padding: 7px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .hero {
+      background: linear-gradient(160deg, #ffffff 0%, #f2e6da 100%);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-content {
+      padding: 22px;
+    }
+
+    .eyebrow {
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.05;
+      letter-spacing: -1.2px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0 0 18px;
+    }
+
+    .hero-image {
+      background: #efe4d8;
+    }
+
+    .hero-image img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .cta-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 14px;
+      padding: 15px 16px;
+      font-size: 16px;
+      font-weight: 800;
+      text-align: center;
+      cursor: pointer;
+      display: block;
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-dark);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--brand-dark);
+      border: 1px solid var(--border);
+    }
+
+    .section {
+      margin-top: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      padding: 18px;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      letter-spacing: -0.5px;
+    }
+
+    .section p {
+      margin-top: 0;
+      color: var(--muted);
+    }
+
+    .features {
+      display: grid;
+      gap: 10px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      background: #fbf8f4;
+      border: 1px solid var(--border);
+      padding: 12px;
+      border-radius: 14px;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 9px;
+      background: #ead8c4;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .feature span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 1 / 1.15;
+      object-fit: cover;
+      border-radius: 14px;
+      background: #eee;
+      border: 1px solid var(--border);
+    }
+
+    .specs {
+      display: grid;
+      gap: 8px;
+    }
+
+    .spec {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 0;
+    }
+
+    .spec:last-child {
+      border-bottom: none;
+    }
+
+    .spec span:first-child {
+      color: var(--muted);
+    }
+
+    .spec span:last-child {
+      font-weight: 800;
+      text-align: right;
+    }
+
+
+
+    .price-card {
+      border: 1px solid #d5c1ad;
+      background: #fbf2e8;
+      border-radius: 18px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .price-label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .price {
+      font-size: 34px;
+      font-weight: 900;
+      color: var(--brand-dark);
+      letter-spacing: -1px;
+    }
+
+    .price-note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #111;
+      border: 1px solid var(--border);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .faq details {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+
+    .faq details:last-child {
+      border-bottom: none;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .faq p {
+      margin: 8px 0 0;
+      font-size: 14px;
+    }
+
+    .sticky-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+      padding: 12px 16px;
+      z-index: 20;
+    }
+
+    .sticky-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+      margin: 18px 0 6px;
+    }
+
+    @media (min-width: 640px) {
+      .page {
+        padding: 28px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: stretch;
+      }
+
+      .hero-image img {
+        height: 100%;
+        aspect-ratio: auto;
+      }
+
+      .cta-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sticky-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    INSTRUCCIONES RÁPIDAS:
+    1) Reemplazar las imágenes dentro de /img/
+    2) Video de YouTube ya cargado.
+    3) Precio ya cargado.
+    4) WhatsApp ya cargado.
+  -->
+
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-mym.png" alt="Logo MyM Fibrofacil" />
+        <div>MyM Fibrofacil</div>
+      </div>
+      <div class="tag">Nuevo producto</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Nueva línea plegable</div>
+        <h1>Torre de Aprendizaje Plegable</h1>
+        <p class="subtitle">
+          Una nueva variante de una de nuestras líneas más vendidas: práctica, plegable y pensada para espacios reducidos.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#precio">Ver precio</a>
+          <a class="btn btn-secondary" href="#video">Ver armado</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="img/torre-plegable-principal.jpg" alt="Torre de Aprendizaje Plegable MyM Fibrofacil" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>¿Por qué incorporarla?</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="icon">✅</div>
+          <div>
+            <strong>Plegable</strong>
+            <span>Ideal para espacios reducidos, departamentos y habitaciones chicas.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🧒</div>
+          <div>
+            <strong>Uso infantil</strong>
+            <span>Pensada para acompañar actividades en cocina, baño o espacios de aprendizaje.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">📦</div>
+          <div>
+            <strong>Producto vendible</strong>
+            <span>Se suma a una de las líneas más vendidas de nuestra fábrica, permitiendo una nueva variante para tus catálogos.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🛠️</div>
+          <div>
+            <strong>Armado simple</strong>
+            <span>Incluye video de armado y tornillos para facilitar la explicación al cliente final.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Fotos del producto</h2>
+      <div class="gallery">
+        <img src="img/torre-plegable-principal.jpg" alt="Torre de Aprendizaje Plegable vista principal" />
+        <img src="img/torre-plegable-plegada.jpg" alt="Torre de Aprendizaje Plegable plegada" />
+        <img src="img/torre-plegable-frontal.jpg" alt="Torre de Aprendizaje Plegable vista frontal" />
+        <img src="img/torre-plegable-lateral.jpg" alt="Torre de Aprendizaje Plegable vista lateral" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Medidas y características</h2>
+      <div class="specs">
+        <div class="spec">
+          <span>Alto</span>
+          <span>87 cm</span>
+        </div>
+        <div class="spec">
+          <span>Ancho</span>
+          <span>44,5 cm</span>
+        </div>
+        <div class="spec">
+          <span>Profundidad abierta</span>
+          <span>47 cm</span>
+        </div>
+        <div class="spec">
+          <span>Profundidad plegada</span>
+          <span>23 cm</span>
+        </div>
+        <div class="spec">
+          <span>Material</span>
+          <span>MDF 18 mm</span>
+        </div>
+        <div class="spec">
+          <span>Presentación</span>
+          <span>Desarmada, con tornillos incluidos</span>
+        </div>
+        <div class="spec">
+          <span>Terminación</span>
+          <span>Cruda, ideal para personalizar</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="precio" class="section">
+      <h2>Precio mayorista</h2>
+      <div class="price-card">
+        <div class="price-label">Precio lanzamiento</div>
+        <div class="price">$44.993 + IVA</div>
+        <div class="price-note">Producto disponible en stock en fábrica. Consultar condiciones mayoristas.</div>
+      </div>
+
+      <div style="margin-top: 14px;">
+        <a class="btn whatsapp" href="https://wa.me/5491159339958?text=Hola%2C%20quiero%20consultar%20por%20la%20Torre%20de%20Aprendizaje%20Plegable" target="_blank">
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <h2>Video de armado</h2>
+      <p>
+        Mirá cómo se arma la Torre de Aprendizaje Plegable paso a paso.
+      </p>
+
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/6lQZFX2RwK8"
+          title="Video de armado Torre de Aprendizaje Plegable"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div style="margin-top: 14px;">
+        <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=6lQZFX2RwK8" target="_blank" rel="noopener">
+          Abrir video en YouTube
+        </a>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details open>
+        <summary>¿Está disponible para mayorista?</summary>
+        <p>Sí. El producto ya se encuentra en stock en fábrica. Podés hacer tu pedido para recibirlo en tu sucursal más cercana o pasarlo a retirar.</p>
+      </details>
+
+      <details>
+        <summary>¿Se entrega armada o desarmada?</summary>
+        <p>Se entrega desarmada, con video de armado y tornillos para su armado, permitiendo facilitar su traslado y posterior personalización.</p>
+      </details>
+
+      <details>
+        <summary>¿Sirve para pintar o personalizar?</summary>
+        <p>Sí. Al ser de MDF crudo, se puede pintar, decorar o intervenir según el estilo del negocio o cliente final.</p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      MyM Fibrofacil · Productos en fibrofacil, pino y melamina
+    </footer>
+  </main>
+
+  <div class="sticky-cta">
+    <div class="sticky-inner">
+      <a class="btn btn-secondary" href="#video">Ver video</a>
+      <a class="btn whatsapp" href="https://wa.me/5491159339958?text=Hola%2C%20quiero%20consultar%20por%20la%20Torre%20de%20Aprendizaje%20Plegable" target="_blank">
+        Consultar
+      </a>
+    </div>
+  </div>
+</body>
+</html>
