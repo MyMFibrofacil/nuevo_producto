@@ -1,0 +1,20 @@
+.mym3d-slide,.mym3d-shell{position:relative;width:100%;aspect-ratio:1/1;background:#f5f3ee}.mym3d-shell{display:flex;align-items:center;justify-content:center;overflow:hidden}.mym3d-shell.mym3d-active{touch-action:none}.mym3d-poster{width:100%!important;height:100%!important;object-fit:contain}.mym3d-start{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);z-index:2;border:0;border-radius:99px;padding:12px 20px;background:#222;color:#fff;font-weight:600;cursor:pointer;white-space:nowrap}.mym3d-viewer{display:block;width:100%;height:100%;touch-action:none!important}.mym3d-controls{position:absolute;left:8px;right:8px;bottom:8px;display:flex;align-items:center;gap:8px;padding:8px;background:rgba(255,255,255,.94);border-radius:9px;z-index:3}.mym3d-controls label{font-size:12px}.mym3d-controls select{max-width:125px}.mym3d-controls input[type=range]{min-width:60px;flex:1}.mym3d-controls output{font-size:12px;min-width:30px}.mym3d-ar{position:absolute;right:10px;top:10px;z-index:4;border:0;border-radius:99px;padding:10px 14px;background:#222;color:white;cursor:pointer;display:none}@media(max-width:767px){.mym3d-ar.mym3d-ar-ready{display:block}.mym3d-controls{flex-wrap:wrap}.mym3d-controls input[type=range]{flex-basis:40%}}.woocommerce-product-gallery .flex-control-nav img[src*="vista-3d-v2.webp"]{object-fit:contain;background:#f5f3ee}
+
+@media(max-width:767px){.mym3d-viewer{position:absolute;inset:0;height:100%}.mym3d-has-movements .mym3d-viewer{height:calc(100% - 88px)}.mym3d-controls{bottom:0;min-height:72px}.mym3d-ar.mym3d-ar-ready{left:10px;right:auto;max-width:calc(100% - 65px)}}
+
+body:is(.postid-812,.postid-776,.postid-813,.postid-879,.postid-880,.postid-742,.postid-743,.postid-777,.postid-767,.postid-12154) .woocommerce-product-gallery .flex-control-nav img[alt="Vista 3D"]{
+  display:block;
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:1/1!important;
+  object-fit:cover!important;
+  object-position:center;
+  background:#f5f3ee;
+}
+
+
+body.postid-776 .mym3d-poster{object-fit:cover;object-position:center}
+
+body.postid-813 .mym3d-poster{object-fit:cover;object-position:center}
+
+body.postid-12154 .mym3d-poster{object-fit:cover;object-position:center}

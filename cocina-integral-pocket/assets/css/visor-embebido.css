@@ -1,0 +1,14 @@
+/* Ajustes de tamaño y zoom para mostrar solo el visor de la ficha del producto. */
+html, body { width: 100%; height: 100%; min-height: 100%; margin: 0; overflow: hidden; background: #f5f3ee; }
+.mym3d-slide, .mym3d-shell { width: 100%; height: 100%; min-height: 100%; aspect-ratio: auto; background: #f5f3ee; }
+.mym3d-shell { overflow: hidden; }
+.mym3d-poster { object-fit: cover !important; object-position: center; transform: translateY(-8%); }
+.mym3d-viewer { width: 100%; height: 100%; }
+.mym3d-zoom { position: absolute; z-index: 5; top: 12px; right: 12px; display: grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.96); color: #111; box-shadow: 0 1px 5px rgba(0,0,0,.12); cursor: pointer; }
+.mym3d-zoom svg { width: 21px; height: 21px; }
+.mym3d-controls { bottom: 8px; }
+@media (max-width: 767px) {
+  .mym3d-viewer { position: absolute; inset: 0; height: 100%; }
+  .mym3d-has-movements .mym3d-viewer { height: calc(100% - 88px); }
+  .mym3d-controls { bottom: 8px; }
+}
