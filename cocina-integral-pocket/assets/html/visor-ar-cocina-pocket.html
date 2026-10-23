@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Realidad aumentada | Cocina Integral Pocket</title>
+  <link rel="stylesheet" href="../css/visor-ar.css?v=1">
+  <script type="module" src="../js/visor-ar-cocina-pocket.js?v=1"></script>
+</head>
+<body>
+  <main class="ar-page">
+    <a class="back-link" href="../../index.html#visor">← Volver al producto</a>
+    <section class="ar-card" aria-labelledby="ar-title">
+      <p class="eyebrow">Cocina Integral Pocket</p>
+      <h1 id="ar-title">Probala en tu espacio</h1>
+      <p class="instructions">Apoyá el celular en el lugar donde te gustaría verla y tocá el botón de realidad aumentada.</p>
+      <div class="ar-stage">
+        <model-viewer
+          src="../models/modelo-ar.glb"
+          ios-src="../models/modelo-ar.usdz"
+          poster="../models/modelo.png"
+          alt="Modelo 3D de la Cocina Integral Pocket para ver en realidad aumentada"
+          ar
+          ar-modes="webxr quick-look"
+          ar-placement="floor"
+          camera-controls
+          touch-action="pan-y"
+          shadow-intensity="0.7"
+          exposure="1"
+          loading="eager">
+          <button class="ar-launch" slot="ar-button" type="button">
+            <span aria-hidden="true">⌖</span> Ver en mi espacio
+          </button>
+        </model-viewer>
+        <div class="loading-message" role="status">Preparando el modelo…</div>
+      </div>
+      <p class="compatibility-note">Si tu celular es compatible, se abrirá la cámara para ubicar el producto en tu ambiente.</p>
+    </section>
+  </main>
+</body>
+</html>

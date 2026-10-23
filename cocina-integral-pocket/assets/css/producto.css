@@ -34,6 +34,9 @@ h2 { margin-bottom: 12px; font-size: 22px; letter-spacing: -.5px; }
 .btn { display: flex; min-height: 50px; align-items: center; justify-content: center; gap: 9px; padding: 13px 15px; border: 1px solid transparent; border-radius: 14px; font-size: 14px; font-weight: 800; text-align: center; }
 .btn-primary { background: var(--brand); color: #fff; }
 .btn-primary:hover { background: var(--brand-dark); }
+.btn-ar { margin-top: 10px; background: #222; color: #fff; }
+.btn-ar:hover { background: #000; }
+.btn-ar span { font-size: 22px; line-height: 1; }
 .btn-whatsapp { background: #25d366; color: #fff; }
 .whatsapp-icon { width: 21px; height: 21px; flex: 0 0 21px; }
 .price { margin: 14px 0 0; color: var(--brand-dark); font-size: 30px; font-weight: 900; letter-spacing: -1px; }
@@ -76,6 +79,7 @@ h2 { margin-bottom: 12px; font-size: 22px; letter-spacing: -.5px; }
   .features { grid-template-columns: 1fr 1fr; }
   .viewer-frame { width: min(100%, 620px); margin-inline: auto; }
 }
+@media (min-width: 768px) { .btn-ar { display: none; } }
 @media (max-width: 420px) {
   .page { padding: 14px; }
   .brand { gap: 7px; font-size: 14px; }
