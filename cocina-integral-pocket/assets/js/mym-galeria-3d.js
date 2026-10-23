@@ -180,7 +180,11 @@
       if (model.canActivateAR) button.classList.add('mym3d-ar-ready');
     });
     button.addEventListener('click', async () => {
-      if (!model.canActivateAR) return;
+      if (!model.canActivateAR) {
+        button.textContent = model.loaded ? 'AR no disponible en este celular' : 'Esperá a que cargue el modelo';
+        setTimeout(() => { button.textContent = 'Ver en mi espacio'; }, 2500);
+        return;
+      }
       if (cfg.arGlb) {
         button.disabled = true;
         button.textContent = 'Preparando cámara…';
